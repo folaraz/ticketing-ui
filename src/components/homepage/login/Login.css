@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:600,700&display=swap');
+
+
+.Login {
+    display: flex;
+    justify-content: center;
+    font-family: Nunito, Roboto, Arial, sans-serif;
+    background: #700096;
+    height: 350px;
+    width: 500px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 1px 15px 50px rgba(0, 0, 0, .2);
+    float: right;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.Login .login-container {
+    height: 90%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.905);
+    margin-top: 60px;
+}
+
+.login-container header {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 auto 60px auto;
+    position: relative;
+    height: 30px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.login-container .header-headings {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+
+.login-container .header-headings span {
+    margin: 3px 0;
+}
+
+.LoginForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.LoginForm .account-form-fields {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 350px;
+    transition: all .4s cubic-bezier(.785, .135, .15, .86);
+}
+
+.LoginForm .account-form-fields .login {
+    max-height: 250px;
+}
+
+.LoginForm .account-form-fields th {
+    font-size: 18px;
+    text-align: left;
+    margin-right: 100px;
+    padding: 0px 50px 10px 50px;
+}
+
+.LoginForm .account-form-fields input {
+    border: 0;
+    margin: 0px 5px 10px 5px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: Nunito, sans-serif;
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+}
+
+.LoginForm .account-form-fields ::placeholder {
+    color: rgba(0, 0, 0, 0.392);
+}
+
+.account-form-fields ::-webkit-input-placeholder {
+    color: #aaaaaa;
+}
+
+.LoginForm .account-form-fields :focus {
+    outline: none;
+}
+
+.btn-submit-form {
+    border: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    padding: 15px 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: Nunito, sans-serif;
+    background: #5c00a762;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .13);
+    transition: all .2s ease;
+}
+
+.LoginForm button:hover {
+    background: #3e0071;
+}
+
+.LoginForm button:active {
+    outline: none;
+    background: #3e0071;
+}
+
+.LoginForm button:focus {
+    outline: none;
+    background: #3e0071;
+}
