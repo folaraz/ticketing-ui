@@ -6,31 +6,26 @@ class SignUp extends Component {
 
     state = {
         title: '',
-        Username: '',
-        firstname: '',
-        lastname: '',
-        DOB: '',
+        userName: '',
+        firstName: '',
+        lastName: '',
+        dateOfBirth: '',
         gender: '',
         password: ''
     }
+
+
     onSubmit = (e) => {
-        console.log(this.state.username);
-        console.log(this.state.firstname);
-        console.log(this.state.lastname);
-        console.log(this.state.email);
-        console.log(this.state.gender);
-        console.log(this.state.DOB);
-        console.log(this.state.password);
         e.preventDefault();
     }
     handleUsernameChange = (e) => {
-        this.setState({username: e.target.value})
+        this.setState({userName: e.target.value})
     }
-    handleFirstnameChange = (e) => {
-        this.setState({firstname: e.target.value})
+    handleFirstNameChange = (e) => {
+        this.setState({firstName: e.target.value})
     }
-    handleLastnameChange = (e) => {
-        this.setState({lastname: e.target.value})
+    handleLastNameChange = (e) => {
+        this.setState({lastName: e.target.value})
     }
     handleEmailChange = (e) => {
         this.setState({email: e.target.value})
@@ -39,14 +34,14 @@ class SignUp extends Component {
         this.setState({gender: e.target.value})
     }
     handleDOBChange = (e) => {
-        this.setState({DOB: e.target.value})
+        this.setState({dateOfBirth: e.target.value})
     }
     handlePasswordChange = (e) => {
         this.setState({password: e.target.value})
     }
 
     render() {
-        const {username, firstname, lastname, email, gender, DOB, password} = this.state;
+        const {userName, firstName, lastName, email, gender, dateOfBirth, password} = this.state;
         return (
             <div className={'Details'}>
                 <div className='Details-container'>
@@ -59,24 +54,24 @@ class SignUp extends Component {
                             className='Details-field'>
                             <tr>
                                 <td>
-                                    <input id='username' name='username' type='username' value={username}
+                                    <input id='username' name='username' type='username' value={userName}
                                            placeholder='Username'
                                            onChange={this.handleUsernameChange}/></td>
-                                <td><input id='firstname' name='firstname' type='firstname' value={firstname}
-                                           placeholder='Firstname'
-                                           onChange={this.handleFirstnameChange}
+                                <td><input id='firstname' name='firstname' type='firstname' value={firstName}
+                                           placeholder='First Name'
+                                           onChange={this.handleFirstNameChange}
                                 /></td>
                             </tr>
                             <tr>
-                                <td><input id='lastname' name='lastname' type='lastname' value={lastname}
-                                           placeholder='Lastname'
-                                           onChange={this.handleLastnameChange}/></td>
+                                <td><input id='lastname' name='lastname' type='lastname' value={lastName}
+                                           placeholder='Last Name'
+                                           onChange={this.handleLastNameChange}/></td>
                                 <td><input id='email' name='email' type='email' value={email} placeholder='E-mail'
                                            onChange={this.handleEmailChange}/></td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input className="date" id='DOB' name='DOB' type='date' value={DOB}
+                                    <input className="date" id='DOB' name='DOB' type='date' value={dateOfBirth}
                                            placeholder='date of birth'
                                            onChange={this.handleDOBChange}/></td>
                                 <td>
@@ -87,11 +82,6 @@ class SignUp extends Component {
                                         <option value="female">Female</option>
                                         <option value="other">Other</option>
                                     </select>
-
-                                    {/*<input id='occupation' name='gender' type='gender' value={gender}*/}
-                                    {/*       placeholder='Gender'*/}
-                                    {/*       onChange={this.handleGenderChange}/>*/}
-
 
                                 </td>
 

@@ -20,7 +20,7 @@ class HomePage extends Component {
 
     render() {
         const {loadLoginPage, loadSignUpPage} = this.state;
-        let pageToRender = <div>Testing Something</div>;
+        let pageToRender = <div></div>;
         if (loadLoginPage) {
             pageToRender = <Login/>
         }

@@ -9,8 +9,6 @@ class Login extends Component {
     }
 
     onSubmit = (e) => {
-        console.log(this.state.email);
-        console.log(this.state.password);
         e.preventDefault();
     }
     handleEmailChange = (e) => {
@@ -21,7 +19,7 @@ class Login extends Component {
     }
 
     render() {
-        const {option, email, password} = this.state;
+        const { email, password} = this.state;
         return (
             <div className={'Login'}>
                 <div className='login-container'>
