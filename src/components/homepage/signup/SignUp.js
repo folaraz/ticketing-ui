@@ -86,9 +86,9 @@ class SignUp extends Component {
                                 </td>
 
                             </tr>
-                            <td><input id='password' name='password' type='password' value={password}
+                            <input id='password' name='password' type='password' value={password}
                                        placeholder='Password'
-                                       onChange={this.handlePasswordChange}/></td>
+                                       onChange={this.handlePasswordChange}/>
                         </div>
                         <button className='btn-submit-form' type='submit'>SignUp</button>
                     </form>

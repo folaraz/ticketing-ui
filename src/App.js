@@ -1,25 +1,30 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
 import Login from "./components/homepage/login/Login";
 import SignUp from "./components/homepage/signup/SignUp";
 import './App.css'
 import HomePage from "./components/homepage/HomePage";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
-class App extends Component{
+class App extends Component {
 
     render() {
-        return(
-            <div className={'App'}>
-             <Router>
+        return(<Router>
+            <div>
                 <Switch>
-                    <Route path="/" exact>
+                    <Route exact path="/">
                         <HomePage/>
                     </Route>
+                    <Route path="/login">
+                        <Login/>
+                    </Route>
+                    <Route path="/sign-up">
+                        <SignUp/>
+                    </Route>
                 </Switch>
-                </Router> 
             </div>
-        )
+        </Router>)
+
 
     }
 }
