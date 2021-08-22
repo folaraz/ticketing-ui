@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
+
+.Homepage {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+.Homepage__header {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3e0071;
+    overflow-x: hidden;
+
+}
+
+.Header__nav {
+    margin-top: -13px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header__nav button:active {
+    outline: none;
+    background: #3e0071;
+}
+
+.Header__nav button:focus {
+    outline: none;
+    background: #3e0071;
+}
+
+.Homepage ul {
+    position: relative;
+    display: flex;
+}
+
+.Homepage ul li {
+    list-style: none;
+}
+
+.Homepage ul li a {
+    margin-top: 25px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 900;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.Header__nav button {
+    position: relative;
+    border: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    padding: 13px;
+    right: 100px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    border-radius: 7px;
+    color: #fff;
+    width: 150px;
+    font-size: 1rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    background: black;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .13);
+    transition: all .2s ease;
+}
+
+.btn-submit-form {
+    margin-left: 75px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    padding-left: 30px;
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span {
+    color: #3e0071;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .textBox p {
+    color: #333;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #3e0071;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.sci {
+    position: relative;
+    width: 50px;
+    left: 100px;
+    transform: translateY(-30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.27);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3e0071;
+    clip-path: circle(500px at right);
+}
+
+

@@ -43,6 +43,9 @@ class SignUp extends Component {
     render() {
         const {userName, firstName, lastName, email, gender, dateOfBirth, password} = this.state;
         return (
+            <div className={'square'}>
+
+
             <div className={'Details'}>
                 <div className='Details-container'>
                     <header>
@@ -90,10 +93,11 @@ class SignUp extends Component {
                                        placeholder='Password'
                                        onChange={this.handlePasswordChange}/>
                         </div>
-                        <button className='btn-submit-form' type='submit'>SignUp</button>
+                        <button className='btn-submit-form-one' type='submit'>SignUp</button>
                     </form>
                 </div>
 
+            </div>
             </div>
         )
 
