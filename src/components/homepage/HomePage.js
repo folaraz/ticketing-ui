@@ -17,15 +17,16 @@ class HomePage extends Component {
                         <ul>
                             <li><a href={'#'}>About</a></li>
                             <li><a href={'#'}>Pricing</a></li>
-                            <li><a href={'#'}>Contact</a></li>
+                            <li><a href={'#'}>Contact</a></li></ul>
 
-                        </ul>
+<ul>
                <Link to="/login">
                 <button   className='btn-submit-form' onClick="/login">Log In</button>
                 </Link>
                 <Link to="/sign-up">
                     <button className='btn-submit-form' onClick="/signup">Sign Up</button>
                 </Link>
+                        </ul>
                     </div>
                 </div>
 
@@ -42,12 +43,7 @@ class HomePage extends Component {
 
 
 </div>
-                <p>You can visit us on</p>
-                <ul className={'sci'}>
-                    <li><a href={'#'}><img src={'./images/facebook.png'}/></a></li>
-                    <li><a href={'#'}><img src={'./images/twitter.png'}/></a></li>
-                    <li><a href={'#'}><img src={'./images/instagram.png'}/></a></li>
-                </ul>
+
             </div>
         )
     }
