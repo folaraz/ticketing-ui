@@ -57,7 +57,7 @@
     margin-top: 40px;
 }
 
-.DetailsForm .Details-fields {
+.DetailsForm .Details-field {
     display: flex;
     flex-direction: column;
     overflow: hidden;
