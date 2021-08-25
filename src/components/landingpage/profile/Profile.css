@@ -46,10 +46,10 @@
 .Profile__content{
     position:relative;
     display: flex;
-    justify-content: center;
+    justify-content: ;
     font-family: 'Noto Sans TC', sans-serif;
-    background: #3e0071;
-    height: 570px;
+    background: white;
+    height: 700px;
     width: 1130px;
     box-sizing: border-box;
     border-radius: 15px;
@@ -65,10 +65,12 @@
 .Profile__content h3 {
     position: relative;
     display: flex;
-    font-size: 1.2rem;
+    margin-top: 20px;
+    font-size: 1.4rem;
     padding-left: 450px;
     text-align: center;
-    color: white;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: black;
 }
 hr{
     position: relative;
@@ -91,7 +93,6 @@ hr{
 .ProfileForm {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
 }
 .ProfileForm .Profile-fields {
     display: flex;
@@ -100,24 +101,24 @@ hr{
     transition: all .4s cubic-bezier(.785, .135, .15, .86);
 }
 .ProfileForm .Profile-fields input {
-    color: white;
-    display: flex;
+    color: black;
     border: 0;
+    display: flex;
     padding: 15px;
     font-size: 1rem;
     font-family: 'Noto Sans TC', sans-serif;
-    background-color: black;
+    background-color: #EAF4FC;
     border-radius: 5px;
     margin: 10px 15px;
 }
 .ProfileForm .Profile-fields td {
-    color: white;
+    color: black;
     font-size: 18px;
     text-align: center;
     padding-right: 100px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
-.ProfileForm .  Profile-fields ::placeholder {
+.ProfileForm .Profile-fields ::placeholder {
     color: #aaa;
 }
 
@@ -136,11 +137,11 @@ hr{
     border: 0;
     font-size: 1rem;
     font-family: 'Noto Sans TC', sans-serif;
-    color: #aaa;
+    color:#aaa;
     padding: 15px 9px;
     border-radius: 6px;
     margin-left: 36px;
-    background-color: black;
+    background-color: #EAF4FC;
 }
 #address{
     width: 180px;
@@ -151,30 +152,29 @@ hr{
     padding: 14px 20px;
     width: 170px;
     margin-left: -10px;
-    color: #aaa
+    color: #aaa;
 }
 .changes {
     border: 0;
     margin-left: 300px;
-    width: 440px;
+    width: 350px;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
-    padding: 15px 0px;
-    margin-top: 15px;
-    margin-bottom: 35px;
+    padding: 15px  0px;
+    margin-top: 30px;
     border-radius: 8px;
-    color: #fff;
+    color: black;
     font-size: 1rem;
     font-family: 'Noto Sans TC', sans-serif;
-    background: #5c00a762;
+    background: #EAF4FC;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, .13);
     transition: all .2s ease;
 }
 
 .ProfileForm button:hover {
-    background: #3e0071;
+    background: #7d7d7d;
 }
 
 .ProfileForm button:active {
