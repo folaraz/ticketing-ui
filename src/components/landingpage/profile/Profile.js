@@ -77,7 +77,7 @@ class Profile extends Component {
                         </tr>
                         <tr>
                             <td>Gender</td>
-                            <td> <select id="gender" value={gender}
+                            <td> <select id="sex" value={gender}
                                          onChange={this.handleGenderChange}>
                                 <option value="" disabled selected>Select your Gender</option>
                                 <option value="male">Male</option>
