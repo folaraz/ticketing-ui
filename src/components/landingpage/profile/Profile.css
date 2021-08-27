@@ -1,4 +1,4 @@
-.Profile{
+Profile {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -8,14 +8,17 @@
 
 
 }
-.box{
-    position: relative;
+
+.box {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    max-height: 100%;
     background: #EAF4FC;
 }
+
 .Profile__header {
     position: relative;
     top: 0;
@@ -30,7 +33,7 @@
 
 }
 
-.Profile h4{
+.Profile h4 {
     display: flex;
     position: relative;
     font-size: 1.2rem;
@@ -38,13 +41,15 @@
     text-align: center;
     color: #3e0071;
 }
+
 .Profile a {
     padding-right: 20px;
     margin-top: 10px;
     display: inline-block;
 }
-.Profile__content{
-    position:relative;
+
+.Profile__content {
+    position: relative;
     display: flex;
     font-family: 'Noto Sans TC', sans-serif;
     background: white;
@@ -55,68 +60,78 @@
     border-radius: 15px;
     box-shadow: 1px 15px 50px rgba(0, 0, 0, .2);
     float: left;
-    margin-top: 10px;
     margin-right: 50px;
     margin-left: 10%;
-    padding-left: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
     overflow-x: hidden;
 
 }
+
 .Profile__content h3 {
     position: relative;
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 1.4rem;
-    padding-left: 40%;
-    text-align: center;
+    padding-left: 43%;
     font-family: 'Noto Sans TC', sans-serif;
     color: black;
 }
-hr{
+
+hr {
     position: relative;
-    width: 1090px;
+    margin-top: 0px;
+    width: 100%;
 }
-.contents{
+
+.contents {
     display: flex;
     flex-direction: column;
     position: relative;
+    text-align: center;
     width: 100%;
 }
+
 .Profile__header .title {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .ProfileForm {
     display: flex;
     flex-direction: column;
 }
+
 .ProfileForm .Profile-fields {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     transition: all .4s cubic-bezier(.785, .135, .15, .86);
 }
+
 .ProfileForm .Profile-fields input {
-    width: 80%;
+    width: 81%;
     position: relative;
     color: black;
     border: 0;
     display: flex;
-    padding: 15px ;
+    padding: 15px;
     font-size: 1rem;
     font-family: 'Noto Sans TC', sans-serif;
     background-color: #EAF4FC;
     border-radius: 5px;
-    margin: 10px 15px;
+    margin: 20px 15px;
 }
+
 .ProfileForm .Profile-fields td h5 {
     position: relative;
     color: black;
     font-size: 18px;
     padding-right: 100px;
-    padding-top: 10px;
+    padding-top: px;
 }
+
 .ProfileForm .Profile-fields ::placeholder {
     color: #aaa;
 }
@@ -132,35 +147,40 @@ hr{
 #sex {
     position: relative;
     display: flex;
-    width: 97%;
+    width: 77%;
     border: 0;
     font-size: 1rem;
     font-family: 'Noto Sans TC', sans-serif;
-    color:#aaa;
+    color: #aaa;
     padding: 15px 9px;
     border-radius: 6px;
-    margin-left: 36px;
+    margin-left: 80px;
     background-color: #EAF4FC;
 }
-#surname{
+
+#surname {
     position: relative;
-    margin-left: 25%;
+    margin-left: 45%;
 }
-#address{
-    width: 83%;
-    margin-left: 24px;
+
+#address {
+    width: 81%;
+    margin-left: 29px;
     position: relative;
 }
+
 .ProfileForm .Profile-fields .date {
     padding: 14px 20px;
-    width: 86%;
-    margin-left: -10px;
+    width: 78%;
+    margin-left: -7px;
     color: #aaa;
 }
+
 .changes {
+    position: relative;
     border: 0;
-    margin-left: 300px;
-    margin-bottom: 30px;
+    margin-left: 33%;
+    margin-bottom: 50px;
     width: 40%;
     appearance: none;
     -webkit-appearance: none;

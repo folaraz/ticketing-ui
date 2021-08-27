@@ -71,6 +71,7 @@
     font-size: 1rem;
     font-family: 'Noto Sans TC', sans-serif;
     color: #000;
+    width: 70%;
     border-radius: 5px;
     margin: 10px 15px;
 }
@@ -99,26 +100,30 @@
 select {
     position: relative;
     display: flex;
-    width: 200px;
+    width: 100%;
     border: 0;
     padding: 15px 0px;
     font-size: 1rem;
     font-family: 'Noto Sans TC', sans-serif;
     color: #000;
     border-radius: 6px;
-    margin: 14px;
+    right: 43px;
+    margin:14px;
     background-color: white;
 }
 
 .DetailsForm .Details-field .date {
     padding: 15px 30px;
-    width: 140px;
+    width:49%;
+}
+#password{
+    width:85%
 }
 
 .btn-submit-form-one {
     border: 0;
     margin-left: 10px;
-    width: 440px;
+    width: 95%;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;

@@ -46,7 +46,6 @@ class Profile extends Component {
 
                     <div className={'Profile__header'}>
                         <h4>PROFILE</h4>
-                        <a href={'#'}><img src={'./images/user.png'} width={'50px'}/></a>
                     </div>
 
                     <div className={'Profile__content'}>
