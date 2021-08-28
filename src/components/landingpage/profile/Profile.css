@@ -1,4 +1,4 @@
-Profile {
+.Profile {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ Profile {
 
 }
 
-.box {
+.background__color {
     position: absolute;
     top: 0;
     left: 0;
@@ -17,6 +17,7 @@ Profile {
     height: 100%;
     max-height: 100%;
     background: #EAF4FC;
+    overflow-x: hidden;
 }
 
 .Profile__header {
@@ -42,11 +43,6 @@ Profile {
     color: #3e0071;
 }
 
-.Profile a {
-    padding-right: 20px;
-    margin-top: 10px;
-    display: inline-block;
-}
 
 .Profile__content {
     position: relative;
@@ -62,6 +58,7 @@ Profile {
     float: left;
     margin-right: 50px;
     margin-left: 10%;
+    margin-bottom: 5%;
     padding-left: 60px;
     padding-right: 60px;
     overflow-x: hidden;
@@ -91,6 +88,10 @@ hr {
     text-align: center;
     width: 100%;
 }
+.Profile__content .contents{
+    position: relative;
+    margin-bottom: 40px;
+}
 
 .Profile__header .title {
     display: flex;
@@ -111,7 +112,7 @@ hr {
 }
 
 .ProfileForm .Profile-fields input {
-    width: 81%;
+    width: 82%;
     position: relative;
     color: black;
     border: 0;
@@ -123,13 +124,18 @@ hr {
     border-radius: 5px;
     margin: 20px 15px;
 }
+.ProfileForm .Profile-fields img {
+    position: absolute;
+    margin-top: -35px;
+}
+
 
 .ProfileForm .Profile-fields td h5 {
+    padding-top: 20px;
     position: relative;
     color: black;
     font-size: 18px;
     padding-right: 100px;
-    padding-top: px;
 }
 
 .ProfileForm .Profile-fields ::placeholder {
@@ -147,14 +153,14 @@ hr {
 #sex {
     position: relative;
     display: flex;
-    width: 77%;
+    width: 100%;
     border: 0;
     font-size: 1rem;
     font-family: 'Noto Sans TC', sans-serif;
     color: #aaa;
-    padding: 15px 9px;
+    padding: 15px 13px;
     border-radius: 6px;
-    margin-left: 80px;
+    margin-left: 38px;
     background-color: #EAF4FC;
 }
 
@@ -164,23 +170,22 @@ hr {
 }
 
 #address {
-    width: 81%;
+    width: 82%;
     margin-left: 29px;
     position: relative;
 }
 
 .ProfileForm .Profile-fields .date {
     padding: 14px 20px;
-    width: 78%;
+    width: 85%;
     margin-left: -7px;
     color: #aaa;
 }
 
-.changes {
+.btn-save-changes {
     position: relative;
     border: 0;
     margin-left: 33%;
-    margin-bottom: 50px;
     width: 40%;
     appearance: none;
     -webkit-appearance: none;

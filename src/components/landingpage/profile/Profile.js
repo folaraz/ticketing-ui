@@ -39,7 +39,7 @@ class Profile extends Component {
     render() {
         const {userName, firstName, lastName, gender, dateOfBirth, address} = this.state;
         return (
-            <div className={'box'}>
+            <div className={'background__color'}>
 
 
                 <div className={'Profile'}>
@@ -100,7 +100,7 @@ class Profile extends Component {
                                     </tr>
 
                                 </div>
-                                <button className='changes' type='submit'>Save Changes</button>
+                                <button className='btn-save-changes' type='submit'>Save Changes</button>
                             </form>
                         </div>
 
