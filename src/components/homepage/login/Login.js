@@ -35,7 +35,7 @@ class Login extends Component {
                                 className={'account-form-fields login'}>
                                 <input id='email' name='email' type='email' value={email} placeholder='E-mail'
                                        onChange={this.handleEmailChange}/>
-                                <input id='password' name='password' type='password' value={password}
+                                <input id='access' name='password' type='password' value={password}
                                        placeholder='Password'
                                        onChange={this.handlePasswordChange}/>
                             </div>

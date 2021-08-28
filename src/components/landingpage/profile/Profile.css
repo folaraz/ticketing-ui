@@ -1,0 +1,218 @@
+.Profile {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+    overflow-x: hidden;
+
+
+}
+
+.background__color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    background: #EAF4FC;
+    overflow-x: hidden;
+}
+
+.Profile__header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+
+
+}
+
+.Profile h4 {
+    display: flex;
+    position: relative;
+    font-size: 1.2rem;
+    padding-left: 45%;
+    text-align: center;
+    color: #3e0071;
+}
+
+
+.Profile__content {
+    position: relative;
+    display: flex;
+    font-family: 'Noto Sans TC', sans-serif;
+    background: white;
+    height: 100%;
+    width: 80%;
+    max-width: 85%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 1px 15px 50px rgba(0, 0, 0, .2);
+    float: left;
+    margin-right: 50px;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    padding-left: 60px;
+    padding-right: 60px;
+    overflow-x: hidden;
+
+}
+
+.Profile__content h3 {
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    padding-left: 43%;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: black;
+}
+
+hr {
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.Profile__content .contents {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.Profile__header .title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ProfileForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.ProfileForm .Profile-fields {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all .4s cubic-bezier(.785, .135, .15, .86);
+}
+
+.ProfileForm .Profile-fields input {
+    width: 82%;
+    position: relative;
+    color: black;
+    border: 0;
+    display: flex;
+    padding: 15px;
+    font-size: 1rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #EAF4FC;
+    border-radius: 5px;
+    margin: 20px 15px;
+}
+
+.ProfileForm .Profile-fields img {
+    position: absolute;
+    margin-top: -35px;
+}
+
+
+.ProfileForm .Profile-fields td h5 {
+    padding-top: 20px;
+    position: relative;
+    color: black;
+    font-size: 18px;
+    padding-right: 100px;
+}
+
+.ProfileForm .Profile-fields ::placeholder {
+    color: #aaa;
+}
+
+.Profile-fields ::-webkit-input-placeholder {
+    color: #aaaaaa;
+}
+
+.ProfileForm .Profile-fields :focus {
+    outline: none;
+}
+
+#sex {
+    position: relative;
+    display: flex;
+    width: 100%;
+    border: 0;
+    font-size: 1rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #aaa;
+    padding: 15px 13px;
+    border-radius: 6px;
+    margin-left: 38px;
+    background-color: #EAF4FC;
+}
+
+#surname {
+    position: relative;
+    margin-left: 45%;
+}
+
+#address {
+    width: 82%;
+    margin-left: 29px;
+    position: relative;
+}
+
+.ProfileForm .Profile-fields .date {
+    padding: 14px 20px;
+    width: 85%;
+    margin-left: -7px;
+    color: #aaa;
+}
+
+.btn-save-changes {
+    position: relative;
+    border: 0;
+    margin-left: 33%;
+    width: 40%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 8px;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    background: #EAF4FC;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .13);
+    transition: all .2s ease;
+}
+
+.ProfileForm button:hover {
+    background: #EAF4FC;
+    filter: brightness(.9);
+}
+
+.ProfileForm button:active {
+    outline: none;
+    background: #3e0071;
+}
+
+
+
