@@ -100,7 +100,7 @@ class Profile extends Component {
                                     </tr>
 
                                 </div>
-                                <button className='btn-save-changes' type='submit'>Save Changes</button>
+                                <button  className='btn-save-changes' type='submit'>Save Changes</button>
                             </form>
                         </div>
 

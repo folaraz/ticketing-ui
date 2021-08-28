@@ -203,7 +203,8 @@ hr {
 }
 
 .ProfileForm button:hover {
-    background: #7d7d7d;
+    background: #EAF4FC;
+    filter: brightness(.9);
 }
 
 .ProfileForm button:active {
@@ -211,9 +212,5 @@ hr {
     background: #3e0071;
 }
 
-.ProfileForm button:focus {
-    outline: none;
-    background: #3e0071;
-}
 
 
