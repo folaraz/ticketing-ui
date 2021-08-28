@@ -88,7 +88,8 @@ hr {
     text-align: center;
     width: 100%;
 }
-.Profile__content .contents{
+
+.Profile__content .contents {
     position: relative;
     margin-bottom: 40px;
 }
@@ -124,6 +125,7 @@ hr {
     border-radius: 5px;
     margin: 20px 15px;
 }
+
 .ProfileForm .Profile-fields img {
     position: absolute;
     margin-top: -35px;

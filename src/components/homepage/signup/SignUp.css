@@ -108,16 +108,17 @@
     color: #000;
     border-radius: 6px;
     right: 28%;
-   margin-left: 38px;
+    margin-left: 38px;
     background-color: white;
 }
 
 .DetailsForm .Details-field .date {
     padding: 15px 30px;
-    width:49%;
+    width: 49%;
 }
-#password{
-    width:85%
+
+#password {
+    width: 85%
 }
 
 .btn-submit-form-one {
