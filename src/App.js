@@ -5,6 +5,7 @@ import SignUp from "./components/homepage/signup/SignUp";
 import './App.css';
 import HomePage from "./components/homepage/HomePage";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import BookingPage from "./components/applicationpage/bookingpage/BookingPage";
 
 
 class App extends Component {
@@ -24,6 +25,9 @@ class App extends Component {
                     </Route>
                     <Route path="/profile">
                         <Profile/>
+                    </Route>
+                    <Route path="/booking-page">
+                        <BookingPage/>
                     </Route>
                 </Switch>
             </div>

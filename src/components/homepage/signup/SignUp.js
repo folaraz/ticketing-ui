@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 
 import './SignUp.css';
 
 class SignUp extends Component {
 
     state = {
-        title: '',
         userName: '',
         firstName: '',
         lastName: '',
+        email: '',
         dateOfBirth: '',
         gender: '',
         password: ''
@@ -16,7 +17,26 @@ class SignUp extends Component {
 
 
     onSubmit = (e) => {
+        const {userName, firstName, lastName, email, dateOfBirth, gender, password} = this.state;
         e.preventDefault();
+        let userSignUpData = {
+            "dateOfBirth": dateOfBirth,
+            "email": email,
+            "firstName": firstName,
+            "gender": gender,
+            "lastName": lastName,
+            "password": password,
+            "role": [
+                "USER"
+            ],
+            "username": userName
+        }
+        axios.post(`http://localhost:9090/api/v1/auth/sign-up`, userSignUpData)
+            .then(res => {
+                console.log(res);
+                console.log(res.data);
+            })
+
     }
     handleUsernameChange = (e) => {
         this.setState({userName: e.target.value})
@@ -81,9 +101,8 @@ class SignUp extends Component {
                                         <select id="gender" value={gender}
                                                 onChange={this.handleGenderChange}>
                                             <option value="" disabled selected>Select your Gender</option>
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
-                                            <option value="other">Other</option>
+                                            <option value="MALE">MALE</option>
+                                            <option value="FEMALE">FEMALE</option>
                                         </select>
 
                                     </td>
